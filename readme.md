@@ -3,7 +3,22 @@
 Celebrate **Diwali** with this fun and interactive **AI-based hand-controlled game** built entirely using **Python**, **OpenCV**, **MediaPipe**, and **Pygame**.  
 Use your **hands via webcam** to catch **Diyas (lamps)** and **Sweets**, while avoiding **Firecrackers 💣**, all tracked in real-time using AI-powered hand detection — no keyboard or mouse required!
 
+## 🎯 MediaPipe Body Pose Detection
+
+MediaPipe is a Google Developed Body Pose detection Library. MediaPipe is a good choice for single-person, real-time pose estimation on CPUs due to its high accuracy and speed, especially in challenging conditions, while YOLO is better for multi-person detection and applications leveraging GPUs. MediaPipe is easier to use with pre-built models, while YOLO is more customizable and accurate for occluded individuals. 
+
+![Hand Landmarks](images/landmark.png)
+
+These landmarks are used to:
+- Track hand position and movement
+- Calculate the catch zone radius
+- Detect hand gestures for menu interaction
+- Enable precise collision detection with game objects
+
 ---
+## 🎯 Hand Landmark Detection
+
+The game uses MediaPipe's hand detection system which tracks **21 key landmarks** on each hand in real-time:
 
 ## 🧩 Overview
 
